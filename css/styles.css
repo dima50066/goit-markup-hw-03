@@ -101,7 +101,7 @@ header {
   padding: 188px 0;
 }
 
-.section1-title {
+.section-main-title {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -111,7 +111,7 @@ header {
   max-width: 496px;
 }
 
-.section1-button {
+.section-main-button {
   cursor: pointer;
   background-color: #4d5ae5;
   font-size: 16px;
@@ -126,28 +126,41 @@ header {
   border-radius: 4px;
 }
 
-.main-button:hover {
+.section-main-button:hover {
   background-color: #404bbf;
 }
 
-.main-button:focus {
+.section-main-button:focus {
   background-color: #404bbf;
 }
 
 /* advantages */
-.section2 {
+.section-adv {
   padding: 120px 0;
 }
 
-.section2-ul {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-adv-ul {
   display: flex;
   gap: 24px;
 }
-.section2-list {
+.section-adv-list {
   width: calc((100% - 72px) / 4);
 }
 
-.section2-title {
+.section-adv-title {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -155,7 +168,7 @@ header {
   color: #2e2f42;
   margin-bottom: 8px;
 }
-.section2-text {
+.section-adv-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -164,12 +177,12 @@ header {
 }
 
 /* team */
-.section3 {
+.section-team {
   background: #f4f4fd;
   padding: 120px 0;
 }
 
-.section3-title {
+.section-team-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -180,20 +193,20 @@ header {
   margin-bottom: 72px;
 }
 
-.section3-ul {
+.section-team-ul {
   display: flex;
   gap: 24px;
 }
-.section3-li {
+.section-team-li {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 
-.section3-li-container {
+.section-team-li-container {
   padding: 32px 0;
 }
-.section3-li-name {
+.section-team-li-name {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -204,7 +217,7 @@ header {
   margin-bottom: 8px;
 }
 
-.section3-li-pos {
+.section-team-li-pos {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -214,12 +227,12 @@ header {
 }
 
 /* portfolio */
-.section4 {
+.section-portfolio {
   background-color: #fff;
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.section4-title {
+.section-portfolio-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -229,22 +242,22 @@ header {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-.section4-ul {
+.section-portfolio-ul {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
 }
-.section4-li {
+.section-portfolio-li {
   width: calc((100% - 48px) / 3);
 }
-.section4-card {
+.section-portfolio-card {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
 
-.section4-name {
+.section-portfolio-name {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -252,7 +265,7 @@ header {
   color: #2e2f42;
   margin-bottom: 8px;
 }
-.portfolio-class {
+.section-portfolio-class {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -273,10 +286,6 @@ header {
   margin-bottom: 16px;
 }
 
-.footer-div {
-  margin-left: 156px;
-  width: 264px;
-}
 .footer-text {
   font-size: 16px;
   font-weight: 400;
