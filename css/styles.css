@@ -96,12 +96,12 @@ header {
 }
 
 /* main */
-.section-main {
+.dark-bg {
   background: #2e2f42;
   padding: 188px 0;
 }
 
-.section-main-title {
+.main-title {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -111,7 +111,7 @@ header {
   max-width: 496px;
 }
 
-.section-main-button {
+.main-button {
   cursor: pointer;
   background-color: #4d5ae5;
   font-size: 16px;
@@ -135,32 +135,21 @@ header {
 }
 
 /* advantages */
-.section-adv {
-  padding: 120px 0;
+.advantages {
+  display: block;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.section-adv-ul {
+.advantages-row {
   display: flex;
   gap: 24px;
 }
-.section-adv-list {
-  width: calc((100% - 72px) / 4);
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
 }
 
-.section-adv-title {
+.advantages-title {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -168,7 +157,8 @@ header {
   color: #2e2f42;
   margin-bottom: 8px;
 }
-.section-adv-text {
+.advantages-main {
+  display: inline-block;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -177,12 +167,12 @@ header {
 }
 
 /* team */
-.section-team {
+.team {
   background: #f4f4fd;
   padding: 120px 0;
 }
 
-.section-team-title {
+.team-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -193,20 +183,17 @@ header {
   margin-bottom: 72px;
 }
 
-.section-team-ul {
+.team-row {
   display: flex;
   gap: 24px;
 }
-.section-team-li {
+.team-li {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 
-.section-team-li-container {
-  padding: 32px 0;
-}
-.section-team-li-name {
+.team-name {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -217,7 +204,7 @@ header {
   margin-bottom: 8px;
 }
 
-.section-team-li-pos {
+.team-position {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -227,12 +214,12 @@ header {
 }
 
 /* portfolio */
-.section-portfolio {
+.portfolio {
   background-color: #fff;
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.section-portfolio-title {
+.portfolio-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -240,24 +227,9 @@ header {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  margin-bottom: 72px;
-}
-.section-portfolio-ul {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-}
-.section-portfolio-li {
-  width: calc((100% - 48px) / 3);
-}
-.section-portfolio-card {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
 }
 
-.section-portfolio-name {
+.portfolio-name {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -278,7 +250,6 @@ header {
 .footer {
   background: #2e2f42;
   height: 312px;
-  padding: 100px 0;
 }
 
 .logo-footer {
