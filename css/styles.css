@@ -22,6 +22,16 @@ ul {
   padding: 0 15px;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* header */
 
 header {
@@ -96,12 +106,12 @@ header {
 }
 
 /* main */
-.dark-bg {
+.section-main {
   background: #2e2f42;
   padding: 188px 0;
 }
 
-.main-title {
+.section-main-title {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -111,7 +121,7 @@ header {
   max-width: 496px;
 }
 
-.main-button {
+.section-main-button {
   cursor: pointer;
   background-color: #4d5ae5;
   font-size: 16px;
@@ -135,21 +145,19 @@ header {
 }
 
 /* advantages */
-.advantages {
-  display: block;
+.section-adv {
+  padding: 120px 0;
 }
 
-.advantages-row {
+.section-adv-ul {
   display: flex;
   gap: 24px;
 }
-.advantages-list {
-  display: flex;
-  flex-direction: column;
-  margin: 24px;
+.section-adv-list {
+  width: calc((100% - 72px) / 4);
 }
 
-.advantages-title {
+.section-adv-title {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -157,8 +165,7 @@ header {
   color: #2e2f42;
   margin-bottom: 8px;
 }
-.advantages-main {
-  display: inline-block;
+.section-adv-main {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -167,12 +174,26 @@ header {
 }
 
 /* team */
-.team {
+.section-team {
   background: #f4f4fd;
   padding: 120px 0;
 }
 
-.team-title {
+.section-team-ul {
+  display: flex;
+  gap: 24px;
+}
+.section-team-li {
+  background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.section-team-group {
+  padding: 32px 0;
+}
+
+.section-team-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -182,18 +203,7 @@ header {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-
-.team-row {
-  display: flex;
-  gap: 24px;
-}
-.team-li {
-  background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team-name {
+.section-team-name {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -204,7 +214,7 @@ header {
   margin-bottom: 8px;
 }
 
-.team-position {
+.section-team-position {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
