@@ -2,17 +2,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background: #fff;
   color: #434455;
-  width: 100%;
 }
 
-img {
-  display: block;
-}
-
-a {
-  display: inline-block;
-  margin: 40px;
-}
 ul {
   list-style: none;
 }
