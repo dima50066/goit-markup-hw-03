@@ -13,8 +13,8 @@ img {
 }
 .container {
   width: 1158px;
-  margin: 0 auto;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -32,7 +32,7 @@ img {
 
 /* header */
 
-header {
+.header {
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -152,7 +152,7 @@ header {
   gap: 24px;
 }
 .section-adv-list {
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .section-adv-title {
