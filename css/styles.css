@@ -8,8 +8,20 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -37,6 +49,9 @@ img {
 }
 
 /* header */
+address {
+  margin-left: auto;
+}
 
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -44,15 +59,13 @@ img {
 
 .header-own {
   display: flex;
+  align-items: center;
 }
 .header-menu {
   display: flex;
   align-items: center;
   gap: 40px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.02em;
+
   color: #2e2f42;
 }
 
@@ -74,6 +87,7 @@ img {
 .header-menu-button {
   color: #2e2f42;
   padding: 24px 0;
+  display: block;
 }
 .header-menu-button {
   color: #404bbf;
@@ -110,12 +124,12 @@ img {
 }
 
 /* main */
-.section-main {
+.section-hero {
   background: #2e2f42;
   padding: 188px 0;
 }
 
-.section-main-title {
+.section-hero-title {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -125,7 +139,7 @@ img {
   max-width: 496px;
 }
 
-.section-main-button {
+.section-hero-button {
   cursor: pointer;
   background-color: #4d5ae5;
   font-size: 16px;
@@ -140,11 +154,11 @@ img {
   border-radius: 4px;
 }
 
-.section-main-button:hover {
+.section-hero-button:hover {
   background-color: #404bbf;
 }
 
-.section-main-button:focus {
+.section-hero-button:focus {
   background-color: #404bbf;
 }
 
@@ -254,7 +268,6 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
 .section-portfolio-name {
@@ -283,6 +296,7 @@ img {
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
+  color: #4d5ae5;
 }
 
 .footer-text {
