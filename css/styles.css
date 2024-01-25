@@ -138,10 +138,12 @@ address {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffffff;
-  margin-bottom: 48px;
+  max-width: 496px;
+  margin: auto;
 }
 
 .hero-button {
+  margin-top: 48px;
   cursor: pointer;
   background-color: #4d5ae5;
   font-size: 16px;
