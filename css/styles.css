@@ -16,6 +16,7 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -27,6 +28,7 @@ ul {
 img {
   display: block;
 }
+
 .container {
   width: 1158px;
   padding: 0 15px;
@@ -124,22 +126,23 @@ address {
 }
 
 /* main */
-.section-hero {
-  background: #2e2f42;
+.hero {
+  background-color: #2e2f42;
   padding: 188px 0;
+  text-align: center;
 }
 
-.section-hero-title {
+.hero-title {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffffff;
   max-width: 496px;
+  margin-bottom: 48px;
 }
 
-.section-hero-button {
+.hero-button {
   cursor: pointer;
   background-color: #4d5ae5;
   font-size: 16px;
@@ -147,18 +150,17 @@ address {
   line-height: 24px;
   letter-spacing: 0.04em;
   color: #ffffff;
-  display: block;
   min-width: 169px;
   height: 56px;
   border: none;
   border-radius: 4px;
 }
 
-.section-hero-button:hover {
+.hero-button:hover {
   background-color: #404bbf;
 }
 
-.section-hero-button:focus {
+.hero-button:focus {
   background-color: #404bbf;
 }
 
