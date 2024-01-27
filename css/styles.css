@@ -94,6 +94,10 @@ address {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.32px;
+  line-height: 24px;
 }
 .header-menu-button:hover {
   color: #404bbf;
@@ -144,7 +148,7 @@ address {
   color: #ffffffff;
   max-width: 496px;
   margin: 0 auto;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .hero-button {
